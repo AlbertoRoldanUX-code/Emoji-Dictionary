@@ -1,6 +1,17 @@
 import React from "react";
 import Entry from "./Entry";
 
+function createEmojiCard(emojiCard){
+  return <Entry 
+    key={emojipedia.id}
+    emoji={emojipedia.emoji}
+    name={emojipedia.name}
+    definition={emojipedia.meaning}
+  />
+}
+
+
+
 function App(){
     return(<div>
         <h1>
@@ -8,7 +19,12 @@ function App(){
         </h1>
   
         <dl className="dictionary">
-          <Entry 
+          
+        {contacts.map(createEmojiCard)}
+
+
+
+          {/* <Entry 
             emoji="💪"
             name="Tense Biceps"
             definition="“You can do that!” or “I feel strong!” Arm with tense biceps. Also
@@ -29,7 +45,7 @@ function App(){
             definition="This is funny! A smiley face, rolling on the floor, laughing. The
               face is laughing boundlessly. The emoji version of “rofl“. Stands
               for „rolling on the floor, laughing“."
-          />
+          /> */}
         </dl>
       </div>);
 }
