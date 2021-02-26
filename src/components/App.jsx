@@ -8,6 +8,15 @@ function App(){
         </h1>
   
         <dl className="dictionary">
+          <Entry 
+            aria-label="Tense Biceps"
+            emoji="💪"
+            name="Tense Biceps"
+            definition="“You can do that!” or “I feel strong!” Arm with tense biceps. Also
+              used in connection with doing sports, e.g. at the gym."
+          />
+
+
           <div className="term">
             <dt>
               <span className="emoji" role="img" aria-label="Tense Biceps">
