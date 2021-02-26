@@ -1,5 +1,6 @@
 import React from "react";
 import Entry from "./Entry";
+import emojipedia from "../emojipedia";
 
 function createEmojiCard(emojiCard){
   return <Entry 
@@ -20,7 +21,7 @@ function App(){
   
         <dl className="dictionary">
           
-        {contacts.map(createEmojiCard)}
+        {emojipedia.map(createEmojiCard)}
 
 
 
